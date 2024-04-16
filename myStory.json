@@ -1,0 +1,248 @@
+{
+    "Title": "The Quest for the Lost Kingdom",
+    "Credits": "Created by Krithik Dhandapani.",
+    "InitialLocation": "Village",
+    "Locations": {
+        "Village": {
+            "Body": "You are in a small village surrounded by lush forests. The village is peaceful but rumors of an ancient kingdom have been circulating.",
+            "Choices": [
+                {
+                    "Text": "Go to the Forest",
+                    "Target": "Forest"
+                },
+                {
+                    "Text": "Visit the Tavern",
+                    "Target": "Tavern"
+                },
+                {
+                    "Text": "Travel to the Riverbank",
+                    "Target": "Riverbank"
+                }
+            ]
+        },
+        "Forest": {
+            "Body": "You venture into the forest. The trees are tall and the light is dim. You feel a sense of adventure in the air.",
+            "Choices": [
+                {
+                    "Text": "Explore deeper",
+                    "Target": "Deep Forest"
+                },
+                {
+                    "Text": "Return to Village",
+                    "Target": "Village"
+                },
+                {
+                    "Text": "Head to the Old Ruins",
+                    "Target": "Old Ruins"
+                }
+            ]
+        },
+        "Tavern": {
+            "Body": "You enter the tavern. It's bustling with travelers and merchants. You hear interesting stories from all around the world.",
+            "Choices": [
+                {
+                    "Text": "Talk to the old man in the corner",
+                    "Target": "Old Man"
+                },
+                {
+                    "Text": "Return to Village",
+                    "Target": "Village"
+                },
+                {
+                    "Text": "Listen to the bard",
+                    "Target": "Bard"
+                }
+            ]
+        },
+        "Deep Forest": {
+            "Body": "You find yourself deep in the forest. The air is cooler and you hear the sound of a nearby stream.",
+            "Choices": [
+                {
+                    "Text": "Follow the stream",
+                    "Target": "Hidden Cave"
+                },
+                {
+                    "Text": "Return to Forest",
+                    "Target": "Forest"
+                },
+                {
+                    "Text": "Search for the mystical tree",
+                    "Target": "Mystical Tree"
+                }
+            ]
+        },
+        "Old Man": {
+            "Body": "The old man tells you about the legend of a lost kingdom hidden deep in the forest. He suggests you follow a stream in the forest.",
+            "Choices": [
+                {
+                    "Text": "Thank him and leave the tavern",
+                    "Target": "Village"
+                }
+            ]
+        },
+        "Hidden Cave": {
+            "Body": "You follow the stream and discover a hidden cave entrance. It's dark and mysterious.",
+            "Choices": [
+                {
+                    "Text": "Enter the cave",
+                    "Target": "Lost Kingdom"
+                },
+                {
+                    "Text": "Go back to the Deep Forest",
+                    "Target": "Deep Forest"
+                }
+            ]
+        },
+        "Lost Kingdom": {
+            "Body": "You enter the cave and discover the lost kingdom! The walls are adorned with ancient carvings and the air is filled with magic. You notice a locked door leading to what seems like the Royal Chamber. It is adorned with intricate patterns, but you can't open it without a key.",
+            "Choices": [
+                {
+                    "Text": "Return to the Village",
+                    "Target": "Village"
+                },
+                {
+                    "Text": "Unlock the door to the Royal Chamber",
+                    "Target": "Royal Chamber",
+                    "RequiredItem": "Ancient Key"
+                }
+            ]
+        },
+        "Riverbank": {
+            "Body": "You arrive at the riverbank. The water is calm and serene. There are several fishing boats docked along the edge.",
+            "Choices": [
+                {
+                    "Text": "Speak to the fisherman",
+                    "Target": "Fisherman"
+                },
+                {
+                    "Text": "Visit the Magic Pond",
+                    "Target": "Magic Pond"
+                },
+                {
+                    "Text": "Return to the Village",
+                    "Target": "Village"
+                }
+            ]
+        },
+        "Fisherman": {
+            "Body": "The fisherman tells you of a legend about a mystical fish that grants wishes. He suggests you explore the river.",
+            "Choices": [
+                {
+                    "Text": "Return to the Riverbank",
+                    "Target": "Riverbank"
+                }
+            ]
+        },
+        "Old Ruins": {
+            "Body": "You find yourself in front of ancient ruins. The architecture is crumbling but hints at the grandeur it once had. As you explore the ruins, you stumble upon an 'Ancient Key' lying on the ground. You decide to take it with you.",
+            "Choices": [
+                {
+                    "Text": "Search the ruins further",
+                    "Target": "Search Ruins"
+                },
+                {
+                    "Text": "Return to the Forest",
+                    "Target": "Forest"
+                }
+            ],
+            "Items": ["Ancient Key"]
+        },
+        "Search Ruins": {
+            "Body": "You search the ruins and find an old scroll with inscriptions about the lost kingdom.",
+            "Choices": [
+                {
+                    "Text": "Return to the Old Ruins",
+                    "Target": "Old Ruins"
+                }
+            ]
+        },
+        "Mystical Tree": {
+            "Body": "You stumble upon a mystical tree with glowing leaves. The tree whispers ancient secrets and reveals hidden paths.",
+            "Choices": [
+                {
+                    "Text": "Take the hidden path",
+                    "Target": "Hidden Cave"
+                },
+                {
+                    "Text": "Return to Deep Forest",
+                    "Target": "Deep Forest"
+                }
+            ]
+        },
+        "Bard": {
+            "Body": "The bard tells stories of heroes and adventurers who discovered treasures and secrets. His tales inspire you to continue your quest.",
+            "Choices": [
+                {
+                    "Text": "Thank the bard and leave the tavern",
+                    "Target": "Tavern"
+                }
+            ]
+        },
+        "Magic Pond": {
+            "Body": "You arrive at the Magic Pond, a serene and enchanting body of water surrounded by willow trees. The water shimmers with an otherworldly glow, and you notice a glowing fish swimming near the edge.",
+            "Choices": [
+                {
+                    "Text": "Approach the glowing fish",
+                    "Target": "Glowing Fish Interaction"
+                },
+                {
+                    "Text": "Return to the Riverbank",
+                    "Target": "Riverbank"
+                }
+            ]
+        },
+        "Glowing Fish Interaction": {
+            "Body": "You approach the glowing fish. It looks at you with curious eyes and offers you a chance to make a wish. What will you wish for?",
+            "Choices": [
+                {
+                    "Text": "Wish for wealth",
+                    "Target": "Wish Wealth"
+                },
+                {
+                    "Text": "Wish for knowledge",
+                    "Target": "Wish Knowledge"
+                },
+                {
+                    "Text": "Wish for peace",
+                    "Target": "Wish Peace"
+                }
+            ]
+        },
+        "Wish Wealth": {
+            "Body": "The glowing fish grants your wish for wealth. You suddenly find a treasure chest filled with gold and jewels!",
+            "Choices": [
+                {
+                    "Text": "Return to the Magic Pond",
+                    "Target": "Magic Pond"
+                }
+            ]
+        },
+        "Wish Knowledge": {
+            "Body": "The glowing fish grants your wish for knowledge. You suddenly gain insight into the history of the lost kingdom and the path to find it!",
+            "Choices": [
+                {
+                    "Text": "Return to the Magic Pond",
+                    "Target": "Magic Pond"
+                }
+            ]
+        },
+        "Wish Peace": {
+            "Body": "The glowing fish grants your wish for peace. You feel a profound sense of calm and tranquility wash over you.",
+            "Choices": [
+                {
+                    "Text": "Return to the Magic Pond",
+                    "Target": "Magic Pond"
+                }
+            ]
+        },
+        "Royal Chamber": {
+            "Body": "You unlock the door and enter the Royal Chamber. The room is vast and filled with treasures and relics of the ancient kingdom. You've found the heart of the lost kingdom!",
+            "Choices": [
+                {
+                    "Text": "Return to the Lost Kingdom",
+                    "Target": "Lost Kingdom"
+                }
+            ]
+        }
+    }
+}
